@@ -1,26 +1,34 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-import SButton from '../../components/common/SButton';
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import SButton from "../../components/common/SButton";
+import AllScreens from "../../routes/routes";
 
-const HomeScreen = ({navigation}) => {
-  const handleNavigation = name => {
+const HomeScreen = ({ navigation }) => {
+  const handleNavigation = (name) => {
     navigation.navigate(name);
   };
   return (
     <View style={styles.container}>
-      <SButton text="Parllax Carousel" onPress={() => handleNavigation('ParllaxCarousel')} />
+      <SButton
+        text="Parllax Carousel"
+        onPress={() => handleNavigation("ParllaxCarousel")}
+      />
       {/* <SButton
         text="Search Bar"
         onPress={() => handleNavigation('SearchBar')}
       /> */}
       <SButton
         text="Slider Animation"
-        onPress={() => handleNavigation('SliderAnimation')}
+        onPress={() => handleNavigation("SliderAnimation")}
       />
       <SButton
-      text="Rainbow Circle Animation"
-      onPress={() => handleNavigation('RainbowCircle')}
-    />
+        text="Rainbow Circle Animation"
+        onPress={() => handleNavigation("RainbowCircle")}
+      />
+      <SButton
+        text="Reanimated Example"
+        onPress={() => handleNavigation(AllScreens.ReanimatedExample.name)}
+      />
     </View>
   );
 };
@@ -32,7 +40,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     paddingHorizontal: 15,
-    alignItems: 'center',
-    backgroundColor: '#fff',
+    alignItems: "center",
+    backgroundColor: "#fff",
   },
 });
