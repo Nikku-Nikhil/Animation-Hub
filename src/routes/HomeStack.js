@@ -1,11 +1,11 @@
-import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Screens from './routes';
-import CustomBackButton from '../components/CustomBackButton';
+import React from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Screens from "./routes";
+import CustomBackButton from "../components/CustomBackButton";
 const Stack = createNativeStackNavigator();
 
 const HomeStack = () => {
-  const options = ({navigation}) => ({
+  const options = ({ navigation }) => ({
     headerLeft: () => <CustomBackButton navigation={navigation} />,
   });
   return (
@@ -30,10 +30,15 @@ const HomeStack = () => {
         options={options}
       />
       <Stack.Screen
-      name={Screens.RainbowCircle.name}
-      component={Screens.RainbowCircle.screen}
-      options={options}
-    />
+        name={Screens.RainbowCircle.name}
+        component={Screens.RainbowCircle.screen}
+        options={options}
+      />
+      <Stack.Screen
+        name={Screens.ReanimatedExample.name}
+        component={Screens.ReanimatedExample.screen}
+        options={options}
+      />
     </Stack.Navigator>
   );
 };
