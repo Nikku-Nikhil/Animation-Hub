@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SButton component First taking snapshot 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#eee",
+      "borderColor": "#000",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 5,
+      "opacity": 1,
+      "padding": 18,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#000",
+          "fontSize": 14,
+          "fontWeight": 500,
+          "lineHeight": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <MaterialIcons
+    name="arrow-forward-ios"
+    size={20}
+  />
+</View>
+`;
+
+exports[`SButton component renders with custom backgroundColor, color, width, and borderColor props 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#FF5733",
+      "borderColor": "#0088CC",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginVertical": 5,
+      "opacity": 1,
+      "padding": 18,
+      "width": "50%",
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#FFFFFF",
+          "fontSize": 14,
+          "fontWeight": 500,
+          "lineHeight": undefined,
+        },
+        undefined,
+      ]
+    }
+  >
+    Custom Style
+  </Text>
+  <MaterialIcons
+    name="arrow-forward-ios"
+    size={20}
+  />
+</View>
+`;

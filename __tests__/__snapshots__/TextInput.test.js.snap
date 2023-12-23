@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`STextInput (common) component test cases Renderes Correctly 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "width": 710,
+    }
+  }
+>
+  <TextInput
+    keyboardType="ascii-capable"
+    onChangeText={[Function]}
+    placeholder="Tap to Write"
+    placeholderTextColor="#7F7F7F"
+    style={
+      [
+        {},
+        {
+          "backgroundColor": "#EEEEEE",
+          "borderRadius": 8,
+          "borderWidth": 0.5,
+          "color": "#000000",
+          "fontSize": 16,
+          "marginVertical": 10,
+          "paddingHorizontal": 20,
+          "paddingVertical": 13,
+        },
+      ]
+    }
+    value=""
+  />
+</View>
+`;
